@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Raj Biking Paradise</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo"> Biking </h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="bike1.mp4" autoplay muted loop></video>
+
+        <div class="overlay"></div>
+        <div class="text">
+            <h2> Never Stop Riding</h2>
+            <h3> Explore until bike stops</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ducimus quasi hic harum minima tenetur, beatae quibusdam architecto provident sint asperiores inventore sunt corporis tempore nam blanditiis non vero autem.</p>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="fb.png" alt="" width="24px" height="24px"/></a></li>
+            <li><a href="#"><img src="instagram.png" alt="" width="24px"
+                height="24px"/></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Join</a></li>
+            <li><a href="#"> Contact Us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle= document.querySelector('.toggle')
+        const showcase= document.querySelector('.showcase')
+        
+        menuToggle.addEventListener('click', ()=> {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
